@@ -87,9 +87,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SetrootViewController(rootViewController: viewController, animate: false, tipo: 0)
     }
 
+    /*
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         
-    }
+    } */
 
 
 }

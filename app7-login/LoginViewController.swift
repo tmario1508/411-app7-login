@@ -23,10 +23,13 @@ class LoginViewController: UIViewController {
         let usuario = txtUsuario.text
         let pass = txtPass.text
         
-        if usuario == "mario" && pass == "1234" {
-            plist.set(usuario, forKey: "usuario")
-            appDelegate.onLoginSuccess()
+        for item in lista {
+            if usuario == item.usuario && pass == item.pass {
+                plist.set(usuario, forKey: "usuario")
+                appDelegate.onLoginSuccess()
+            }
         }
+        
     }
     
     override func viewDidLoad() {
